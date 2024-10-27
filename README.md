@@ -2,14 +2,14 @@
 
 ## Sky Viewer
 
-* [“Look for my favorite object and inspect it (all in MAST)”](sky-viewer-mast.md)
-* [“Find an object observed by Roman and identify other MAST data overlapping with it (+accessing catalogs via astroquery in platform)”](sky-viewer-catalog-search) (JWST spectroscopy in a deep field?)
-* [“Do catalog searches in the platform, show them on the sky in Roman, do various data-mining tasks”](sky-viewer-catalog-search) (dwarf galaxies)
+* [“Look for my favorite object and inspect it (all in MAST)”](sky-viewer-base.md)
+* [“Find an object observed by Roman and identify other MAST data overlapping with it (+accessing catalogs via astroquery in platform)”](sky-viewer-catalog-search)
+* [“Do catalog searches in the platform, show them on the sky in Roman, do various data-mining tasks”](sky-viewer-catalog-search)
 
 ## Image Viewer
 
 * “Look at some faint objects near resolution limits and identify features only visible with careful stretching“ (low SB galaxies/UDGs) (also about transitioning from sky viewer to image viewer)
-*  “Go from sky-viewer to single-exposures to determine if a specific object is an artifact or not, including ramp view”
+* “Go from sky-viewer to single-exposures to determine if a specific object is an artifact or not, including ramp view”
 * "Do aperture photometry from the platform on a specific Roman image subset” (option on: large-scale processing)
 * “Do PSF photometry from the platform on a specific Roman image subset“
 
