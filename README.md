@@ -8,10 +8,10 @@
 
 ## Image Viewer
 
-* “Look at some faint objects near resolution limits and identify features only visible with careful stretching“ (low SB galaxies/UDGs) (also about transitioning from sky viewer to image viewer)
-* “Go from sky-viewer to single-exposures to determine if a specific object is an artifact or not, including ramp view”
-* "Do aperture photometry from the platform on a specific Roman image subset” (option on: large-scale processing)
-* “Do PSF photometry from the platform on a specific Roman image subset“
+* [“Sky-to-image transition:identify features only visible with careful stretching“](image-viewer-base.md)
+* [“Go from sky-viewer to single-exposures to determine if a specific object is an artifact or not, including ramp view”](image-viewer-ramp-view.md)
+* ["Do aperture photometry from the platform on a specific Roman image subset”](image-viewer-aperture-photometry.md)
+* [“Do PSF photometry from the platform on a specific Roman image subset“](image-viewer-psf-photometry.md)
 
 MISSING?: Time-viz
 MISSING?: cutouts

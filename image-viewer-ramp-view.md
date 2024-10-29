@@ -1,0 +1,21 @@
+# Image Viewer Science Case: Go from sky-viewer to single-exposures to determine if a specific object is an artifact or not, including ramp view
+
+This science case follows from entry point 2 in [the base image viewer case](image-viewer-base.md), so start there to see the framing science case.
+
+Mirror Spock is looking in more detail at the low surface brightness galaxy, on Mirror Kirk's orders to develop image reduction algorithms that will obliterate the algorithms of their competitor research groups. Mirror Spock, being something of a scientific and technical genius, has worked out a unique way to model these galaxies that provides far better constraints on their outer stellar halo properties, which is very important for differentiating between two different formation scenarios for this type of galaxy. (They call it the "Photon Torpedo" because it blows away the photons from the galaxy.) However, because it's very sensitive to low surface brightness features, it's also very sensitive to certain kinds of image artifacts.  Mirror Spock is using the test object that is well-studied to refine the algorithm to filter out these artifacts.
+
+Mirror Spock thus needs to look at specific pixels in the Roman observation and tell which have been hit by cosmic rays, even relatively faint ones that the standard pipeline reduction might not always catch (but a human... uh, I mean, a sentient being, would). So Mirror spock needs to be able to click on a specific pixel in the sky viewer, see all the individual exposures that went into it, and view the ramp for each of those to look for weak "jumps" that might indicate a cosmic ray.
+
+Mirror Spock does this by zooming in very far on a specific point in the sky viewer, and draws a circle around the artifact feature he sees and wants to check. He uses a Python method call to grab this region.  The `astroquery.mast` in the platform then has a function that allows him to quickly get all the level 2 single exposures (or is it 3?  or 1?  whatever is the single-exposure calibrated level).  These then can be trivially (i.e. in one or a few lines of Python) be loaded into Imviz. He then centers on the sky coordinate at the center of his circle and cycles through all the individual exposures.  He has to adjust the stretch on all of them to be sure, which requires using Python in the platform to explicitly set the stretch parameters after he does the first one by-eye in the UI.  Most look fine, but one does indeed have an odd glitch that might be a cosmic ray.
+
+With this specific exposure identified, Mirror Spock can start up the "ramp-viz" tool (probably via Python in the platform, although perhaps with a fancy button/plugin in Imviz), which shows him the up-the-ramp samples of all the pixels in the circle he drew earlier in the sky viewer. This allows him to see clearly that there is indeed a cosmic ray hit in this one exposure.  He uses that knowledge to re-think the artifact detection part of his image processing/galaxy modeling algorithm, which he has been implemeting locally on his own computer.
+
+Once he has re-worked the modeling algotihm, Mirror Spock wants to test that it correctly catches this problematic cosmic ray pixel.  He uploads the .py file that has all of his algorithm to his home directory in the science platform.  He then runs it directly (either from a notebook using an import or via terminal), which outputs a residual and a model image.  He displays both of these in imiz along with the problematic exposure. Blinking through these images, he can see his algorithm is now correctly ignoring that particular artifact,  which is the goal. He has succeeded, as was the logical outcome.
+
+He has a video call with Mirror Kirk, his collaboration's PI, to explain that the algorithm is working and can be deployed on all of the other Roman LSBGs they have since found.  Mirror Kirk looks dramatically into the camera, pauses for a moment, and then shouts "Fire the Photon Torpedos!"
+
+## Notes
+
+"Ramp-viz" may or may not be a distinct tool.  It has been partially developed for JWST already, but it's not clear to me (EJT) how much of it applies to Roman, so it may or may not be better thought of as an addition to imviz.
+
+Additionally, I (EJT) could write the above workflow as a concept notebook if more detail is desired.
