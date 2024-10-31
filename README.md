@@ -14,13 +14,14 @@
 * [“Do PSF photometry from the platform on a specific Roman image subset“](image-viewer-psf-photometry.md)
 
 MISSING?: Time-viz
-MISSING?: cutouts
 
 ## Platform Database Access
 
 * ["Starting from zero, gain some basic knowledge of what’s in a Roman source catalog, for someone who doesn’t know much about the mission."](database-access-base.md)
-* “Start with some reasonable/common queries in the platform, then realize you need something esoteric, and ...
-* “Cross-match a subset of a Roman catalog with a catalog that is also in some random part of AWS that is sizable but not enormous/batch-processing-needed.“
-* “Write a dynamic query that the user specifies in galactic coordinates that then auto-translates to what the catalog sees“ (stretch goal: some wild and crazy helioprojective coordinate system)
+* [“Start with some reasonable/common queries in the platform, then realize you need something esoteric"](database-access-extended.md)
+* [“Cross-match a subset of a Roman catalog with a catalog that is also in some random part of AWS that is sizable but not big enough to need batch processing.“](database-access-xmatch.md)
+* [“Write a dynamic query that the user specifies in galactic coordinates that then auto-translates to what the catalog sees“](database-access-dynamic.md)
+
+
 
 MISSING?: Time-series analysis
