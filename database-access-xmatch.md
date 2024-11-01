@@ -9,3 +9,5 @@ Unfortunately, now winter is coming in The North, and the team eventually starts
 ## Notes
 
 The details of the dataset here are intentionally a bit vague.  That could be sharpened to something more concrete and specific if helpful, but is currently meant to represent a relatively generic workflow.
+
+Additionally, while the details of institution (e.g. Canada, Australia, and US/Alaska) are jokes, the serious part is that the point is that this science case should be doable for people *not* based in US-East-1, but rather in various other very different AWS regions (even if the platform itself is in a specific region).
