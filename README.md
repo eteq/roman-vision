@@ -3,8 +3,8 @@
 ## Sky Viewer
 
 * [“Look for my favorite object and inspect it (all in MAST)”](sky-viewer-base.md)
-* [“Find an object observed by Roman and identify other MAST data overlapping with it (+accessing catalogs via astroquery in platform)”](sky-viewer-catalog-search)
-* [“Do catalog searches in the platform, show them on the sky in Roman, do various data-mining tasks”](sky-viewer-catalog-search)
+* [“Find an object observed by Roman and identify other MAST data overlapping with it (+accessing catalogs via astroquery in platform)”](sky-viewer-catalog-search.md)
+* [“Do catalog searches in the platform, show them on the sky in Roman, do various data-mining tasks”](sky-viewer-catalog-search.md)
 
 ## Image Viewer
 
