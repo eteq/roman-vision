@@ -12,8 +12,7 @@
 * [“Go from sky-viewer to single-exposures to determine if a specific object is an artifact or not, including ramp view”](image-viewer-ramp-view.md)
 * ["Do aperture photometry from the platform on a specific Roman image subset”](image-viewer-aperture-photometry.md)
 * [“Do PSF photometry from the platform on a specific Roman image subset“](image-viewer-psf-photometry.md)
-
-MISSING?: Time-viz
+* ["Imviz <-> Catlog Interactions"](imviz-catalog.md)
 
 ## Platform Database Access
 
@@ -21,7 +20,4 @@ MISSING?: Time-viz
 * [“Start with some reasonable/common queries in the platform, then realize you need something esoteric"](database-access-extended.md)
 * [“Cross-match a subset of a Roman catalog with a catalog that is also in some random part of AWS that is sizable but not big enough to need batch processing.“](database-access-xmatch.md)
 * [“Write a dynamic query that the user specifies in galactic coordinates that then auto-translates to what the catalog sees“](database-access-dynamic.md)
-
-
-
-MISSING?: Time-series analysis
+* ["Time series focused Roman queries"](time-series-roman.md)
