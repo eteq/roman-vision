@@ -13,12 +13,13 @@ He has produced color-magnitude diagrams for all the candidates, but he needs to
 
 In the end they come up with a smaller but significant list of candidates.  Gandalf worries, though, that they data mined too greedily and too deep, so he wants to run some of his own software that he developed several years back to check these candidates.  He outputs the candidate source lists to a hand-tailored data table format, uploads his source code directory from an old laptop (or, on a good day, pip installs it), and uses the notebook terminal to run these scripts, which each take several hours. In the end, most are real, and the Fellowship find the first of many new dwarf galaxies discovered by Roman.  
 
-
 ### Addendeum
 
 One of the non-candidates, though, turns out to be a much more massive galaxy, which for some reason they name... the Balrog... of Morgoth.  Time will tell if this has any negative consequences on cosmology.
 
 
-### Question
+## Notes
 
-Would an example of the notebook for the platform-oriented case be helpful here?  If so, I (EJT) can make that.
+* The "one notebook per candidate" generation process is intentional, even though it might seem like a poor choice from an engineering perspective.  This is the sort of thing that 1) users will do whether we want them to or not, and 2) is a meaningful way to share with a large group when every object needs its own individualized inspection. The intent is not for us to build tooling to make this work (it already exists), but build a platform environment that can handle this.
+* Would an example of the notebook for the platform-oriented case be helpful here?  If so, I (EJT) can make that. YES THIS IS DESIRED
+* NOTE ON FUNCTIONALITY: make sure SkyViewer can load up the sky given a coordinate from a single call made in a notebook

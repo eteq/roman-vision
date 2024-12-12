@@ -16,6 +16,10 @@ He has a video call with Mirror Kirk, his collaboration's PI, to explain that th
 
 ## Notes
 
-"Ramp-viz" may or may not be a distinct tool.  It has been partially developed for JWST already, but it's not clear to me (EJT) how much of it applies to Roman, so it may or may not be better thought of as an addition to imviz.
-
-Additionally, I (EJT) could write the above workflow as a concept notebook if more detail is desired.
+* "Ramp-viz" may or may not be a distinct tool.  It has been partially developed for JWST already, but it's not clear to me (EJT) how much of it applies to Roman, so it may or may not be better thought of as an addition to imviz.
+* Additionally, I (EJT) could write the above workflow as a concept notebook if more detail is desired. NO?
+* NOTE ON FUNCTIONALITY: A Level 3 displayed in ImViz should be able to easily fetch and display constituent Level 2 images. Likewise a Level 2 image should be able to easily fetch and display constituent ramps.
+* NOTE ON FUNCTIONALITY: When ImViz supports loading more than one image, the ability like ds9 to align to a common pixel or world coordinate to faciliate comparison while browsing.
+* NOTE ON FUNCTIONALITY: When ImViz supports loading more than one image, the option to apply the same intensity stretch across all loaded images.
+* NOTE ON FUNCTIONALITY: ImViz support of loading more than one image must support both automated "please load the constituents related to this Roman image" as well as a user uploading their own image (e.g., a difference image they created) to allow for A-B comparisons, similarly using a previous/next or menu list to select what image to view. There also needs to be realistic numbers of images that can be loaded into ImViz at any one time.
+* It would be annoying after Mirror Spock improves the algorithm and wants to check success, to need to recreate all the scaling parameters and otherwise.  Having a way to save state in imviz/jdaviz to allow that to easily be re-loaded would help.  However, this is *already* planned jdaviz work, so may not be in scope for the roman upscope.

@@ -1,4 +1,4 @@
-# Database Access Science Case: "Write a dynamic query that the user specifies in galactic coordinates that then auto-translates to what the catalog sees"
+# Database Access Science Case (Stretch Goal): "Write a dynamic query that the user specifies in galactic coordinates that then auto-translates to what the catalog sees"
 
 Daenerys is early-career faculty who has built a reputation as a forward-thinking leader. She is known for breaking the chains of old workflows that her collaborators have and setting them free to do their science using tools she develops or helps them use. As a result, she has some datasets from a variety of different groups and conventions. For this science case, she's especially interested in doing an analysis of Milky Way stars in the High Latitude Wide Area Survey, to trace certain theory-predicted signals of high temperature ISM features that are known as "Dragons".  To do this, she needs to cross-match The whole HLWAS with other multi-wavelength datasets.
 
@@ -13,6 +13,8 @@ In the end they have an extremely strong signal that was only possible by siftin
 
 ## Notes 
 
-While it might seem like an easier solution for this case is "just add a Galactic Coordinates column to the database", the point of this science case is that scientists may have their own coordinate systems or transformations of database queries that are easily expressed in code but not easily expressed in a standard coordiate form. That is true regardless of the details of the science case, and this science case is about enabling that flexibility, not the specific case of Galactic Coordinates.
-
-The HIPSCat transform could be expressed as a concept notebook if that would be helpful.
+* While it might seem like an easier solution for this case is "just add a Galactic Coordinates column to the database", the point of this science case is that scientists may have their own coordinate systems or transformations of database queries that are easily expressed in code but not easily expressed in a standard coordiate form. That is true regardless of the details of the science case, and this science case is about enabling that flexibility, not the specific case of Galactic Coordinates.
+* The HIPSCat transform could be expressed as a concept notebook if that would be helpful. NO?
+* All the actual code for the transform is in custom user software, not in the server itself. That is, it is not in-scope to actually *write* custom transforms, but rather to have the capbility for custom transforms to be provided by the user and then evaluated as part of the search.
+* This use case depends on some work being done in HIPSCat which either we can do or we can hope that HIPSCat will do it.  In that sense this is something of a stretch goal.
+* The long-running job aspect needs more development on the RSP side, so exact definitions are being left vague. Considerations needed include: 1) resource limits, 2) pausing jobs, 3) checkpointing in case something fails.
