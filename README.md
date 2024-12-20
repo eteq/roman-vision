@@ -26,4 +26,4 @@
 
 * [Sky Viewer](sky-viewer-reqs.md)
 * [Image Viewer](image-viewer-reqs.md)
-* [Platform Data Access](platform-data-reqs.md)
+* [Platform Data Access](database-access-reqs.md)
