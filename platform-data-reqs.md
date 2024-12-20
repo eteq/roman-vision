@@ -2,5 +2,13 @@
 
 Note: while titled "requirements", these are intentionally *not* framed as iron-clad requirements to be written aginst.  Rather they are categories of development and key relevant features.  This is because waterfall-style requirements are not compatible with a desire to to be agile in this process and being willing to adjust specific details to the  realities of limited development time and user feedback.
 
-
-* 
+* Ensure there are notebooks available in the RSP to do basic queries from catalogs, assuming very little knowledge of Roman or Python.
+* Ensure all catalog database schema are documented in a public place that is easily reachable from the RSP.  The documentation should be detailed enough that a relatively inexperienced user can understand them. "Relatively inexperienced" is intentionally left non-specific, but targeting the [base use case](database-access-base.md) is a good proxy.  (There are several ways this viewer-from-RSP could be implemenmted - a jupyterhub webview UI in the RSP that specifically views the scema from a web page is one option, a Python docstring based link out to a schema is another.)
+* Develop tooling from Python that allows a user to ask "given this catalog I have in this Python kernel, link me to the relevant part of the database schema" [see the extended access science use case](database-access-extended.md) for details).
+* Develop processes to ensure the database schema documentation are kept up to date and remain well-documented even as data models change and new catalogs are created.
+* Ensure the groups/teams functionality is sufficient to allow teams to share catalogs. (The baseline of this is just literally sharing catalog files - see the [extended access science use case](database-access-extended.md) for more detail, although more advanced versions a la casjobs myDB are possible stretch goals if the user community seems to want it).
+* Ensure the functionality exists to pass RSP-run database queries into the image and sky viewers to plot catalog results in sky coordinates.
+* Document and develop as needed the capability to cross-match RSP-based catalogs with other AWS-based catalogs in reasonably typical astronomy formats (e.g. FITS tables).  Only develop new capabilities if it can be demonstrated existing-generation astronomy software is not sufficient.
+* Document all of the above in RSP notebooks.
+* (Stretch goal) Develop a lazy-matching mechanism in catalog queries that allows the user to specify their query in typical Python astronomy idioms (e.g. astropy tables, astropy SkyCoord matches, or pandas operations), and translate that automatically to the schema or other database storage details (e.g. HEALpix/healcat based storage that is indexed on a *different* frame of SkyCoord).  Detailed further in [the dynamic access use case](database-access-dynamic.md).
+* (Stretch goal) Develop/extend tooling to translate bitflags in catalogs into their actual meaning, using the above database schema as the key.
