@@ -22,6 +22,12 @@
 * ["Time series focused Roman queries"](time-series-roman.md)
 * [“Write a dynamic query that the user specifies in galactic coordinates that then auto-translates to what the catalog sees (Stretch Goal)“](database-access-dynamic.md)
 
+## Refinement Cases
+
+These are notebooks or science cases that were written after the vision to elaborate on themes the implementation teams encounter.
+
+* ["TITLE NEEDED"](sky-to-spectra.ipynb)
+
 ## Requirements Lists
 
 * [Sky Viewer](sky-viewer-reqs.md)
