@@ -26,7 +26,7 @@
 
 These are notebooks or science cases that were written after the vision to elaborate on themes the implementation teams encounter.
 
-* ["TITLE NEEDED"](sky-to-spectra.ipynb)
+* ["Sky viewer to Spectrum visualization for an extragalactic field"](sky-to-spectra.ipynb)
 
 ## Requirements Lists
 
